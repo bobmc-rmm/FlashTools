@@ -18,7 +18,7 @@ operational logic is mostly hidden.</p>
 highlighted command-lines into a script.  Scripting includes testing
 steps that may fail. My script reduces typing tedium because text that
 repeats or that may change are declared once at the beginning of the
-file. This makes it easier to resuse the script for differnt releases,
+file. This makes it easier to resuse the script for different releases,
 different phone, and different computer. I tested the script on
 <b>Ubuntu-23.04, Xubuntu, and Fedora-38 XFCE spin</b>. All good.</p>
 
@@ -43,8 +43,10 @@ phone buttons.</p>
 Run it like:-
 *  cd ~/android
 *  ./setup.sh p1
+*  restart computer to realize the latest change
 *  ./setup.sh p2
 
 <p>Part1 only needs to be run once after you change the $PNAME and $REV
 at the top of the script. Part2 can be repeated for flashing another
 identical phone.</p>
+...
