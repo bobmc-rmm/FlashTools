@@ -1,0 +1,6 @@
+
+# set PATH so it includes user's private android tools
+# this is appended to file ".profile" by the setup.sh
+if [ -d "$HOME/android/platform-tools" ] ; then
+    PATH="$HOME/android/platform-tools:$PATH"
+fi
