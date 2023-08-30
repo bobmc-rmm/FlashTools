@@ -49,4 +49,23 @@ Run it like:-
 <p>Part1 only needs to be run once after you change the $PNAME and $REV
 at the top of the script. Part2 can be repeated for flashing another
 identical phone.</p>
+
+<h4> Distros Differ</h4>
+
+<p>There are small differences between Debian spawns and Fedora which has it's own universe.
+For example, Ubuntu puts it's ~/.local path in ".profile".  My setup.sh appends
+it's ~/android path to ".profile" when Ubuntu is running and that path extension is 
+realized after restart.  However, Fedora38 does not have a ".profile" so the script creates it.
+Another example:- Ubuntu has "bsdtar" installed by default. Fedora does not have that default so
+the script loads the bsdtar library.  Ubuntu will report "unable to locate bsdtar" but the script 
+continues without harm.</p>
+
+<p>I also tried Manjaro which is popular on DistroWatch.com. The setup.sh p2 stopped because fastboot
+hung. It connected the USB to unlock the phone but could not continue the next step. Fastboot is 
+usually silent when it fails. After downloading the factory files it should do the flashing within
+three minutes. Any more time means it is broke.</p>
+
+<p>Debian and Mint will probably work with setup.sh but I did not test that use-case</p>
+
 ...
+
